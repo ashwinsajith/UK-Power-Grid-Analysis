@@ -26,14 +26,17 @@ production using exploratory analysis and multiple linear regression.
 - **Variables:** Demand, coal, CCGT, OCGT, oil, nuclear, wind, solar, hydro, biomass,
   pumped storage, and electricity interconnectors (French, Dutch, Irish, NEMO, NSL)
 
+> The raw dataset is not included in this repository. Download it directly from Gridwatch.
+
+
 
 ## Methodology
 
-1. **Data processing** — timestamp parsing, aggregate columns for total fossil fuel
+1. **Data processing** - Timestamp parsing, aggregate columns for total fossil fuel
    production, renewable production, and net imports; daily resampling to reduce
    autocorrelation
-2. **Exploratory analysis** — trend visualisations, seasonal plots, and a correlation matrix
-3. **Regression modelling** — OLS multiple linear regression with monthly dummy variables
+2. **Exploratory analysis** - Trend visualisations, seasonal plots, and a correlation matrix
+3. **Regression modelling** - OLS multiple linear regression with monthly dummy variables
    (January as baseline) using `statsmodels`
 
 ## Visualisations
